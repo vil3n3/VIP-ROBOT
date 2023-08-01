@@ -8,7 +8,7 @@
          "group",
          "manager"
       ],   
-   "repository": "https://github.com/THE-VIP-BOY-OP/VIP-ROBOT",
+   "repository": "https://github.com/vil3n3/VIP-ROBOT",
    "stack": "heroku-22",
    "addons": [
       {
