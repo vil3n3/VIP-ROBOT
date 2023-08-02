@@ -9,7 +9,7 @@ from telethon import __version__ as s
 from MukeshRobot import OWNER_ID, dispatcher
 from MukeshRobot import pbot as client
 
-Mukesh = "https://graph.org/file/d874fc40ddf9ead0cad6b.jpg"
+Mukesh = "https://graph.org/file/a30dfd38dc3cd79ff26b6.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
@@ -20,7 +20,7 @@ async def repo(client, message):
 
 ╔═════ஜ۩۞۩ஜ════╗
 
- ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗩𝗜𝗣 𝗕𝗢𝗬](https://t.me/the_vip_boy)♨️
+ ♨️𝓜𝓪𝓭𝓮 𝓑𝔂  [𝓥𝓲𝓵𝓵𝓲𝓪𝓷](https://t.me/villen_012)♨️
   
 ╚═════ஜ۩۞۩ஜ════╝
 
@@ -31,11 +31,7 @@ async def repo(client, message):
                 [
                     InlineKeyboardButton(
                         "📍ᴏᴡɴᴇʀ📍",f"tg://user?id={OWNER_ID}"
-                    ),
-                    InlineKeyboardButton(
-                        "📍ʀᴇᴘᴏ📍",
-                        url="https://github.com/THE-VIP-BOY-OP/VIP-ROBOT",
-                    ),
+                    ),                    
                 ]
             ]
         ),
