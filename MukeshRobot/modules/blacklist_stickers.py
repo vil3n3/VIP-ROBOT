@@ -376,7 +376,7 @@ def del_blackliststicker(update: Update, context: CallbackContext):
     if not to_match or not to_match.set_name:
         return
     bot = context.bot
-    getmode, value = sql.get_blacklist_setting(chat.id)
+    getmode, value = sql.oget_blacklist_setting(chat.id)
 
     chat_filters = sql.get_chat_stickers(chat.id)
     for trigger in chat_filters:
@@ -506,7 +506,7 @@ __help__ = """
 ɴᴏᴛᴇ:
  ❍ <sᴛɪᴄᴋᴇʀ ʟɪɴᴋ> ᴄᴀɴ ʙᴇ `ʜᴛᴛᴘs://ᴛ.ᴍᴇ/ᴀᴅᴅsᴛɪᴄᴋᴇʀs/<sᴛɪᴄᴋᴇʀ>` ᴏʀ ᴊᴜsᴛ `<sᴛɪᴄᴋᴇʀ>` ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ sᴛɪᴄᴋᴇʀ ᴍᴇssᴀɢᴇ
 
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+☆............𝙱𝚈 » [𓆰ꪑ𝓲𝓽𝘴𝓾𝘳𝓲  𝘬ꪖ ꪜ𝓲ꪶꪶ𝓲ꪖꪀ𓆪](https://t.me/villen_012)............☆
 """
 
 __mod_name__ = "♨️sᴛɪᴄᴋᴇʀ♨️"
