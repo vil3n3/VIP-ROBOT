@@ -10,11 +10,11 @@ from telethon import __version__ as tver
 from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID
 
 PHOTO = [
-    "https://graph.org/file/a30dfd38dc3cd79ff26b6.jpg",
-    "https://graph.org/file/a30dfd38dc3cd79ff26b6.jpg",
-    "https://graph.org/file/a30dfd38dc3cd79ff26b6.jpg",
-    "https://graph.org/file/a30dfd38dc3cd79ff26b6.jpg",
-    "https://graph.org/file/a30dfd38dc3cd79ff26b6.jpg",
+    "https://graph.org/file/3f7abc44fe9f39a1eb4fe.jpg",
+    "https://graph.org/file/a9418e9ea5d8c3c44c996.jpg",
+    "https://graph.org/file/81ecdf048901982ecc8d8.jpg",
+    "https://graph.org/file/c24c72f854e85fd43cf1f.jpg",
+    "https://graph.org/file/8c385a92033f329da20ff.jpg",
 ]
 
 Mukesh = [
@@ -54,7 +54,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.8)
     await m.reply_photo(
         lol,
-        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[𓆰ꪑ𝓲𝓽𝘴𝓾𝘳𝓲  𝘬ꪖ ꪜ𝓲ꪶꪶ𝓲ꪖꪀ𓆪](f"t.me/{BOT_USERNAME}")』🎄**
+        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡](f"t.me/{BOT_USERNAME}")』🎄**
    ╔═════ஜ۩۞۩ஜ════╗
 
    ♨️𝓜𝓪𝓭𝓮 𝓑𝔂 [𝓥𝓲𝓵𝓵𝓲𝓪𝓷](https://t.me/villen_012)♨️
@@ -68,4 +68,4 @@ __help__ = """
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /alive*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?
 
-☆............𝙱𝚈 » [𓆰ꪑ𝓲𝓽𝘴𝓾𝘳𝓲  𝘬ꪖ ꪜ𝓲ꪶꪶ𝓲ꪖꪀ𓆪](https://t.me/villen_012)............☆"""
+☆............𝙱𝚈 » [ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡](https://t.me/villen_012)............☆"""
