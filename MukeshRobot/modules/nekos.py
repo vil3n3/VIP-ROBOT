@@ -1,6 +1,6 @@
 import aiohttp
 import asyncio
-from Hiroko import Hiroko
+from MukeshRobot import MukeshRobot
 from pyrogram import filters 
 from pyrogram.types import Message 
 import requests 
