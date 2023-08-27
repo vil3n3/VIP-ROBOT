@@ -15,20 +15,20 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 # --------------------------------------------------------------------------------- #
 
 photo = [
-"https://graph.org/file/2fc37c68163780e31599f.jpg",
-"https://graph.org/file/3cc07627bdec5f5afab1c.jpg",
-"https://graph.org/file/809fe233d8f7c29c6fd69.jpg",
-"https://graph.org/file/677619500837cd3190c6d.jpg",
-"https://graph.org/file/2a4d6cfdf60a38130aad2.jpg",
-"https://graph.org/file/066ed5867fe94c333c0b6.jpg",
-"https://graph.org/file/bd06b509e025bc656766d.jpg",
-"https://graph.org/file/cd33fd3d193ac98486eff.jpg",
-"https://graph.org/file/9ffb36ba7d53b7894eaba.jpg",
-"https://graph.org/file/fe6dc66f7968ea69dcec0.jpg",
-"https://graph.org/file/917d3b7324a056d66a8cb.jpg",
-"https://graph.org/file/4f46ebdf26f703f1d5e93.jpg",
-"https://graph.org/file/b3d7c31922a85e94e9627.jpg",
-"https://graph.org/file/82560acb529e63c9ddb94.jpg",
+"https://graph.org/file/8073079d67f4153f6d797.jpg",
+"https://graph.org/file/af30497f733c371822437.jpg",
+"https://graph.org/file/1ae097ffe0462a6b50efc.jpg",
+"https://graph.org/file/5b2c98588bf1511eddedd.jpg",
+"https://graph.org/file/239130d9c36739ed62fcc.jpg",
+"https://graph.org/file/bc702bd0b54b0bb68a3fa.jpg",
+"https://graph.org/file/1868d27c347023a47e507.jpg",
+"https://graph.org/file/a9749cb12e062cd3ebb82.jpg",
+"https://graph.org/file/44ed42d8f307616e47b25.jpg",
+"https://graph.org/file/5a00e2252bfb05edb700f.jpg",
+"https://graph.org/file/3d96e7c85d997c4e730e2.jpg",
+"https://graph.org/file/b20682d0ce7df4194000d.jpg",
+"https://graph.org/file/989a5fbfb738bc309b723.jpg",
+"https://graph.org/file/d5a56cf52dfa28fbb3464.jpg",
 
 ]
 
