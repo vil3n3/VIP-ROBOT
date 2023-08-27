@@ -5,8 +5,8 @@ import asyncio
 from pathlib import Path
 from datetime import datetime
 from pyrogram.enums import ChatType
-from Hiroko import Hiroko
-from Hiroko.Helper.database.couplesdb import get_couple, save_couple
+from MukeshRobot import MukeshRobot
+from MukeshRobot.modules.helper_funcs.couplesdb import get_couple, save_couple
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import Client, filters
 
