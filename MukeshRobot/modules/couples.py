@@ -2,8 +2,8 @@ import random
 from datetime import datetime
 from pyrogram import filters
 from pyrogram.enums import ChatType
-from Hiroko import Hiroko
-from Hiroko.Helper.database.couplesdb import get_couple, save_couple
+from MukeshRobot import MukeshRobot
+from MukeshRobot.modules.helper_funcs.couplesdb import get_couple, save_couple
 
 
 # Date and time
