@@ -1,10 +1,10 @@
 import random 
 from pyrogram import filters,Client,enums
-from Hiroko import Hiroko
+from MukeshRobot import MukeshRobot
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pyrogram.types import ChatPermissions
-from Hiroko.Helper.database.nightmodedb import nightdb,nightmode_on,nightmode_off,get_nightchats 
+from MukeshRobot.modules.helper_funcs.nightmodedb import nightdb,nightmode_on,nightmode_off,get_nightchats 
 
 
 
