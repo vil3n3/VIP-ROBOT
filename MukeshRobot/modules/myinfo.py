@@ -10,13 +10,13 @@ from MukeshRobot import telethn as tgbot
 from MukeshRobot.events import register
 
 edit_time = 5
-""" =======================𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧====================== """
-file1 = "https://telegra.ph/file/9a85d0a873e2dd80d278d.jpg"
-file2 = "https://telegra.ph/file/9e7815284031452afa9e5.jpg"
-file3 = "https://telegra.ph/file/dcc5e003287f69acea368.jpg"
-file4 = "https://telegra.ph/file/ed1ce7fee94f46b0f671e.jpg"
-file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
-""" =======================𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧====================== """
+""" =======================ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡====================== """
+file1 = "https://graph.org/file/3f7abc44fe9f39a1eb4fe.jpg"
+file2 = "https://graph.org/file/81ecdf048901982ecc8d8.jpg"
+file3 = "https://graph.org/file/a9418e9ea5d8c3c44c996.jpg"
+file4 = "https://graph.org/file/c24c72f854e85fd43cf1f.jpg"
+file5 = "https://graph.org/file/8c385a92033f329da20ff.jpg"
+""" =======================ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡====================== """
 
 
 @register(pattern="/myinfo")
@@ -82,4 +82,4 @@ __mod_name__ = "📍ɪɴғᴏ📍"
 __help__ = """
  /myinfo  ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏ 
 
-☆............𝙱𝚈 » [𓆰ꪑ𝓲𝓽𝘴𝓾𝘳𝓲  𝘬ꪖ ꪜ𝓲ꪶꪶ𝓲ꪖꪀ𓆪](https://t.me/villen_012)............☆"""
+☆............𝙱𝚈 » [ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡](https://t.me/villen_012)............☆"""
