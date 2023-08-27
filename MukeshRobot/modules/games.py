@@ -4,10 +4,10 @@ import datetime, pymongo
 import config, random
 from MukeshRobot import MukeshRobot
 from MukeshRobot.modules.ping import get_readable_time
-from Hiroko import BOT_ID
+from MukeshRobot import BOT_ID
 from config import SUDO_USERS as SUPREME_USERS
 from pyrogram import filters
-from Hiroko.modules.games import *
+from MukeshRobot.modules.games import *
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import MONGO_URL
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
