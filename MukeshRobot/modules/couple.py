@@ -80,7 +80,7 @@ Choose couples in your chat
 
  ❍ /couple *:* Choose 2 users and send their name as couples in your chat.
 
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+☆............𝙱𝚈 » [ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡](https://t.me/villen_012)............☆
 """
 
 __mod_name__ = "♨️Cᴏᴜᴘʟᴇ♨️"
