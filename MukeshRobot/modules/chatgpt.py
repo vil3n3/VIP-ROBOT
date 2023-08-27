@@ -2,7 +2,7 @@ import time
 from pyrogram import Client, filters
 import openai
 from bardapi import Bard
-from Hiroko import Hiroko
+from MukeshRobot import MukeshRobot
 from pyrogram.enums import ChatAction, ParseMode
 from typing import Union, List
 
