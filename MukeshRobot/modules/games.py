@@ -2,8 +2,8 @@ import json
 import asyncio
 import datetime, pymongo
 import config, random
-from Hiroko import Hiroko
-from Hiroko.modules.ping import get_readable_time
+from MukeshRobot import MukeshRobot
+from MukeshRobot.modules.ping import get_readable_time
 from Hiroko import BOT_ID
 from config import SUDO_USERS as SUPREME_USERS
 from pyrogram import filters
