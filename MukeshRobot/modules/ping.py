@@ -3,10 +3,10 @@ import random
 from asyncio import sleep as rest
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from Hiroko import boot as tim
-from Hiroko import Hiroko
-from Hiroko import OWNER_ID as owner
-from Hiroko import SUDO_USERS as sudo
+from MukeshRobot import boot as tim
+from MukeshRobot import Hiroko
+from MukeshRobot import OWNER_ID as owner
+from MukeshRobot import SUDO_USERS as sudo
 from pyrogram import filters, __version__
 from platform import python_version
 from pyrogram.types import (
