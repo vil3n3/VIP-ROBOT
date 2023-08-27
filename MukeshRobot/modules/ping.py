@@ -1,21 +1,45 @@
 import time
-from typing import List
+import random
+from asyncio import sleep as rest
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from Hiroko import boot as tim
+from Hiroko import Hiroko
+from Hiroko import OWNER_ID as owner
+from Hiroko import SUDO_USERS as sudo
+from pyrogram import filters, __version__
+from platform import python_version
+from pyrogram.types import (
+    Message,
+    CallbackQuery,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+)
 
-import requests
-from telegram import ParseMode, Update
-from telegram.ext import CallbackContext, run_async
 
-from MukeshRobot import StartTime, dispatcher
-from MukeshRobot.modules.disable import DisableAbleCommandHandler
-from MukeshRobot.modules.helper_funcs.chat_status import sudo_plus
 
-sites_list = {
-    "Telegram": "https://api.telegram.org",
-    "Kaizoku": "https://animekaizoku.com",
-    "Kayo": "https://animekayo.com",
-    "Jikan": "https://api.jikan.moe/v3",
-}
+# ------------------------------------------------------------------------------- #
 
+
+photo = [
+"https://graph.org/file/2fc37c68163780e31599f.jpg",
+"https://graph.org/file/3cc07627bdec5f5afab1c.jpg",
+"https://graph.org/file/809fe233d8f7c29c6fd69.jpg",
+"https://graph.org/file/677619500837cd3190c6d.jpg",
+"https://graph.org/file/2a4d6cfdf60a38130aad2.jpg",
+"https://graph.org/file/066ed5867fe94c333c0b6.jpg",
+"https://graph.org/file/bd06b509e025bc656766d.jpg",
+"https://graph.org/file/cd33fd3d193ac98486eff.jpg",
+"https://graph.org/file/9ffb36ba7d53b7894eaba.jpg",
+"https://graph.org/file/fe6dc66f7968ea69dcec0.jpg",
+"https://graph.org/file/917d3b7324a056d66a8cb.jpg",
+"https://graph.org/file/4f46ebdf26f703f1d5e93.jpg",
+"https://graph.org/file/b3d7c31922a85e94e9627.jpg",
+"https://graph.org/file/82560acb529e63c9ddb94.jpg",
+
+]
+
+# ------------------------------------------------------------------------------- #
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -25,10 +49,7 @@ def get_readable_time(seconds: int) -> str:
 
     while count < 4:
         count += 1
-        if count < 3:
-            remainder, result = divmod(seconds, 60)
-        else:
-            remainder, result = divmod(seconds, 24)
+        remainder, result = divmod(seconds, 60) if count < 3 else divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
         time_list.append(int(result))
@@ -45,70 +66,70 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-def ping_func(to_ping: List[str]) -> List[str]:
-    ping_result = []
+sudo.append(owner)
 
-    for each_ping in to_ping:
+# ------------------------------------------------------------------------------- #
 
-        start_time = time.time()
-        site_to_ping = sites_list[each_ping]
-        r = requests.get(site_to_ping)
-        end_time = time.time()
-        ping_time = str(round((end_time - start_time), 2)) + "s"
-
-        pinged_site = f"<b>{each_ping}</b>"
-
-        if each_ping == "Kaizoku" or each_ping == "Kayo":
-            pinged_site = f'<a href="{sites_list[each_ping]}">{each_ping}</a>'
-            ping_time = f"<code>{ping_time} (Status: {r.status_code})</code>"
-
-        ping_text = f"{pinged_site}: <code>{ping_time}</code>"
-        ping_result.append(ping_text)
-
-    return ping_result
-
-
-@run_async
-@sudo_plus
-def ping(update: Update, context: CallbackContext):
-    msg = update.effective_message
-
+@Hiroko.on_message(filters.command(["ping"], prefixes=["/", "!"]))
+async def ping(Client, m: Message):
     start_time = time.time()
-    message = msg.reply_text("🏓 ᴘɪɴɢɪɴɢ ʙᴀʙʏ....​")
+    sender = m.from_user
+    up = get_readable_time((time.time() - tim))
     end_time = time.time()
-    telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
-    uptime = get_readable_time((time.time() - StartTime))
+    ping1 = str(round((end_time - start_time) * 1000, 3)) + " ms"
+    if m.from_user.id in sudo:
+        e = await m.reply_photo(photo=random.choice(photo),caption="ɢᴇᴛᴛɪɴɢ ᴘɪɴɢɪɴɢ sᴛᴀᴛᴜs...")
+        await rest(2)
+        await e.edit_text("ᴘɪɴɢɪɴɢ ✨")
+        await rest(1)
+        await e.edit_text(PING_TEXT.format(ping1, up, __version__), reply_markup=Button) 
+       
+    if m.from_user.id not in sudo:
+        await m.reply(("ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴍʏ ᴍᴀsᴛᴇʀ ʜᴜʜ!!😏😏\nʙsᴅᴋ ɢᴀɴᴅ ᴘᴇ ɪᴛɴᴇ ᴛʜʜᴘᴀᴅ ᴍᴀʀᴜɴɢɪ ᴏᴡɴᴇʀ ɢɪʀɪ ᴄʜʜᴜᴛ ᴊᴀᴀʏᴇɢɪ ʜᴜʜ 🤭 [ʟᴏᴅᴀ](tg://user?id={}) ᴘᴇʀsᴏɴ.").format(sender.id))
 
-    message.edit_text(
-        "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! ❤️\n"
-        "<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:</b> <code>{}</code>\n"
-        "<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
-        parse_mode=ParseMode.HTML,
-    )
+# ------------------------------------------------------------------------------- #
 
+PING_TEXT = """
+˹ʜɪꝛᴏᴋᴏ ꝛᴏʙᴏᴛ˼ 🇮🇳 sʏsᴛᴇᴍ sᴛᴀᴛs :
 
-@run_async
-@sudo_plus
-def pingall(update: Update, context: CallbackContext):
-    to_ping = ["Telegram"]
-    pinged_list = ping_func(to_ping)
-    pinged_list.insert(2, "")
-    uptime = get_readable_time((time.time() - StartTime))
-
-    reply_msg = "⏱Ping results are:\n"
-    reply_msg += "\n".join(pinged_list)
-    reply_msg += "\n<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(uptime)
-
-    update.effective_message.reply_text(
-        reply_msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
-    )
+**ᴘɪɴɢ ᴘᴏɴɢ:** `{}`
+**ʙᴏᴛ ᴜᴘᴛɪᴍᴇ:** `{}`
+**ʟɪʙʀᴀʀʏ:** `ᴘʏʀᴏɢʀᴀᴍ`
+**ᴍʏ ᴍᴀsᴛᴇʀ: ** `sᴜᴍɪᴛ ʏᴀᴅᴀᴠ`
+**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `3.10.4`
+**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ:** `{}`
+"""
+# ------------------------------------------------------------------------------- #
 
 
-PING_HANDLER = DisableAbleCommandHandler("ping", ping)
-PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall)
+Button = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("๏ ᴄʟᴏsᴇ ๏",callback_data="close_data")
+        ]
+    ]
+)
 
-dispatcher.add_handler(PING_HANDLER)
-dispatcher.add_handler(PINGALL_HANDLER)
 
-__command_list__ = ["ping", "pingall"]
-__handlers__ = [PING_HANDLER, PINGALL_HANDLER]
+# ------------------------------------------------------------------------------- #
+
+
+
+
+@Hiroko.on_message(filters.command("alive"))
+async def alive(_,msg:Message):
+    start_time = time.time()
+    sender = msg.from_user
+    up = get_readable_time((time.time() - tim))
+    end_time = time.time()
+    ping1 = str(round((end_time - start_time) * 1000, 3)) + " ms"    
+    x = await msg.reply_photo(photo=random.choice(photo), caption="**ᴀʟɪᴠɪɴɢ....**")    
+    await x.edit_caption("**๏ ˹ʜɪꝛᴏᴋᴏ ꝛᴏʙᴏᴛ˼ ɪs ᴀʟɪᴠᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ɢᴏᴏᴅ ᴡɪᴛʜ ᴀ ᴘɪɴɢ ᴏғ :**  `{} ᴍs`\n**๏ ʙᴏᴛs sᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ ɪs :** `{}`".format(ping1, up), reply_markup=Button)
+
+
+
+# ------------------------------------------------------------------------------- #
+
+
+
+
