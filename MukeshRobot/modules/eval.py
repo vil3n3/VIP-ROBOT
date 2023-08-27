@@ -7,7 +7,7 @@ from contextlib import *
 from subprocess import getoutput as run
 from pyrogram import *
 from pyrogram.types import *
-from Hiroko import Hiroko
+from MukeshRobot import MukeshRobot
 
 
 
