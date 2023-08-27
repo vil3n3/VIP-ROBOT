@@ -110,4 +110,4 @@ __help_ = """
 /video to download video song
 /vsong to download video song 
 
-☆............𝙱𝚈 » [𓆰ꪑ𝓲𝓽𝘴𝓾𝘳𝓲  𝘬ꪖ ꪜ𝓲ꪶꪶ𝓲ꪖꪀ𓆪](https://t.me/villen_012)............☆"""
+☆............𝙱𝚈 » [ꪜ𝓲ꪶꪶ𝓲ꪖꪀ 𝐴𝑠𝑠𝑖𝑠𝑡𝑎𝑛𝑡](https://t.me/villen_012)............☆"""
